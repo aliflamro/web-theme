@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    line-height: 1.4;
+    font-family: 'Times New Roman';
+    font-size: normal;
+}
+body {
+    background: #FFEFD1;
+    max-width: 768px;
+    margin: 0 auto;
+}
+img {
+    object-fit: cover;
+}
+h1,h2,h3 {
+    margin: 0;
+}
+.text,.title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    margin-bottom: 20px;
+}
+.text h1 {
+    margin: 0;
+}
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    background: #FFD568;
+    border-radius: 6px;
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 10px;
+}
+.subtitle h2 {
+    font-size: 18px;
+    padding: 10px 0;
+}
+.btn {
+    margin: 10px 0;
+}
+.btn .primary {
+    padding: 10px 15px;
+    background: #FFC043;
+    color: #313737;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.col {
+    width: 40%;
+}
+.col img {
+    width: 100%;
+    border-radius: 6px;
+    height: 235px;
+}
+.col-1 {
+    width: 60%;
+    padding: 0 10px;
+}
+
+.navbar {
+    background: #FFD568;
+    margin-bottom: 15px;
+    padding: 10px  20px;
+    color: #313737 !important;
+}
+
+.logo {
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: #313737;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tombol {
+    display: none;
+    color: white;
+    font-size: 14pt;
+}
+
+.tombol:hover {
+    cursor: pointer;
+}
+
+
+.menu {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding-left: 0;
+    margin-right: 10px;
+}
+
+.menu li a {
+    padding: 10px;
+    color: #313737;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu.aktif {
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        background: #FFD568;
+        padding: 10px 20px;
+        right: 60px;
+        left: 0;
+        min-height: 100vh;
+    }
+
+    .menu.aktif li a {
+        padding: 10px;
+        display: inline-block !important;
+    }
+
+    .tombol,#bar {
+        display: block;
+    }
+    #x {
+        display: none;
+    }
+}
